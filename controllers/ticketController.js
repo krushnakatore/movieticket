@@ -201,8 +201,6 @@ export const analyticsTicketController = async (req, res) => {
         }
       );
 
-      // Helper function to get month name from month number
-
       res.status(200).json(formattedResult);
     } catch (err) {
       return res.status(400).send({ success: false, error: err.message });
